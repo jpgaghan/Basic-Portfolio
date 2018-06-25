@@ -142,6 +142,7 @@ footer {
     display: block;
     clear: both;
 }
+
 .contact {
     float: left;
     padding-top: -1px;
@@ -260,7 +261,17 @@ body {
     width: 180px;
     height: 136px;
     float: left;
-    background-image: url(../images/indeed.png)
+    background-image: url(../images/indeed.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.blockelement {
+    float: left;
+}
+
+.content::after {
+    content: “”;
+    clear: both;
+    display: table;
+ }
